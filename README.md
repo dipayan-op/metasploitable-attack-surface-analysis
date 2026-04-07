@@ -111,9 +111,3 @@ The system exposes multiple vulnerable services, significantly increasing the ri
 - Attack surface analysis
 
 ---
-
-## Future Work
-
-- Exploit vsftpd backdoor vulnerability
-- Analyze SMB vulnerabilities
-- Perform web application testing

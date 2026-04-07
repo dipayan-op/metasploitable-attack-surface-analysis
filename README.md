@@ -46,11 +46,22 @@ The target system exposes multiple services:
 
 ---
 
-## Key Finding
+## Risk Assessment
 
-The FTP service is running **vsftpd 2.3.4**, which is known to contain a backdoor vulnerability (CVE-2011-2523).
+- FTP (vsftpd 2.3.4): 🔴 Critical
+- Telnet: 🔴 High
+- SMB: 🔴 High
+- HTTP (Outdated Apache): 🟠 Medium
 
-This makes it a high-priority target for exploitation.
+---
+
+## Vulnerability Analysis
+
+The FTP service is running vsftpd 2.3.4, which is known to contain a backdoor vulnerability (CVE-2011-2523).
+
+This makes it a critical security risk, as attackers can potentially gain remote shell access.
+
+Additionally, the presence of multiple open services such as Telnet, SMB, and MySQL significantly increases the attack surface.
 
 ---
 

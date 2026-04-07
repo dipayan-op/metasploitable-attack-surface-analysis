@@ -96,9 +96,69 @@ This misconfiguration allows:
 
 ---
 
+## Exploitation: Telnet Access
+
+### Command Used
+
+telnet 192.168.226.128
+
+### Credentials Used
+
+Username: msfadmin  
+Password: msfadmin  
+
+---
+
+## Successful Access
+
+![Telnet login](telnet-login.png)
+
+---
+
+## Post-Exploitation Commands
+
+After gaining access, the following commands were executed:
+
+whoami  
+id  
+uname -a  
+pwd  
+ls  
+
+---
+
+## Analysis
+
+The Telnet service allowed login using default credentials, which is a critical security misconfiguration.
+
+This provided immediate shell access to the system without requiring advanced exploitation techniques.
+
+---
+
+## Security Impact
+
+- Unauthorized access to system
+- Full command execution capability
+- Exposure of sensitive system information
+- Increased risk of further exploitation
+
+---
+
+## Risk Assessment
+
+- Telnet Service: 🔴 High Risk
+- Weak Credentials: 🔴 Critical Risk
+
+---
+
 ## Key Insight
 
-The system exposes multiple vulnerable services, significantly increasing the risk of compromise. Even partial access (like anonymous FTP) can provide attackers with valuable entry points.
+Even simple misconfigurations like default credentials can lead to complete system compromise.
+
+This highlights the importance of:
+- Disabling insecure services
+- Enforcing strong authentication
+- Regular security auditing
 
 ---
 

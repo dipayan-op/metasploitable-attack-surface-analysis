@@ -1,6 +1,8 @@
 # metasploitable-attack-surface-analysis
 # Metasploitable Attack Surface Analysis & Initial Access
 
+This project simulates a real-world penetration testing scenario where a vulnerable system is analyzed to identify potential entry points and security weaknesses.
+
 ## Objective
 To perform network scanning on a vulnerable machine (Metasploitable 2), identify exposed services, and analyze potential attack vectors.
 

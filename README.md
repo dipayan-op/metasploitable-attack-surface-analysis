@@ -18,6 +18,7 @@ To perform network scanning on a vulnerable machine (Metasploitable 2), identify
 
 192.168.226.128
 
+![MSF IP](msf-ip.png)
 ---
 
 ## Step 1: Network Scanning
@@ -27,7 +28,7 @@ nmap -sS -sV 192.168.226.128
 
 ### Scan Results
 
-![Nmap Scan](nmap-scan.png)
+![Nmap Scan](nmap-scan-msf.png)
 
 ---
 
